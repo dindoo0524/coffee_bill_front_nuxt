@@ -27,6 +27,7 @@ jobs:
         run: yarn generate
         env:
           REST_AWS_URL: ${{ secrets.REST_AWS_URL }}
+          NUXT_ENV_REST_AWS_URL: ${{ secrets.NUXT_ENV_REST_AWS_URL }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
